@@ -1,6 +1,5 @@
 # Galactic Defender
 
-## [Click here to play](https://fk652.github.io/Galactic-Defender/)
 
 ## Background
 
