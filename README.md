@@ -3,7 +3,7 @@
 
 ## Background
 
-Galactic Defender is a galaxy shooter game, based off the classic [Space Invaders](https://en.wikipedia.org/wiki/Space_Invaders) and [Galaga](https://en.wikipedia.org/wiki/Galaga) games. The main gameplay involves the player controlling a ship that moves around in a fixed 2d screen and shoots down enemy ships/aliens, while also avoiding enemies and their projectiles.
+Space Shooter is a galaxy shooter game, based off the classic [Space Invaders](https://en.wikipedia.org/wiki/Space_Invaders) and [Galaga](https://en.wikipedia.org/wiki/Galaga) games. The main gameplay involves the player controlling a ship that moves around in a fixed 2d screen and shoots down enemy ships/aliens, while also avoiding enemies and their projectiles.
 
 In Galactic Defender the player's goal is to survive waves of enemies.
 
@@ -131,22 +131,6 @@ class Game {
 * npm to manage project dependencies.
 * Webpack and Babel to bundle and transpile the source JavaScript code.
 
-## Implementation Timeline
-
-* Thursday (March 11):
-  * Planning and research. Setup project, work on setting up the HTML page and Canvas game screen.
-* Friday Afternoon & Weekend (March 10-12):
-  * Finishing up the webpage. Completing minimum gameplay functionalities.
-* Monday (March 13):
-  * Complete starting and end game screen, views, logic, and transitions.
-* Tuesday (March 14):
-  * Polishing up the minimal product, and start working on extra features.
-* Wednesday (March 15):
-  * Continue working on extra features.
-* Thursday Morning (March 16):
-  * Polish and deploy product.
-* Afterwards:
-  * Continue Working on bonus features and extra implementations.
 
 ## Bonus features
 
