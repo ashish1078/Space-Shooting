@@ -1,0 +1,340 @@
+$main-color: white;
+$secondary-color: gray;
+$icon-background-color: black;
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px;
+
+  i, p, span, li, h1, h2 {
+    background-color: $icon-background-color;
+  }
+  
+  .header, aside, #game-view {
+    border: 5px ridge $main-color;
+  }
+
+  .header {
+    width: 660px;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 20px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .project-title {
+      font-size: 80px;
+      font-family: "Bangers", sans-serif;
+    }
+
+    .dev-name {
+      font-family: "Oswald", sans-serif;
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+
+    .nav-links {
+      display: flex;
+      justify-content: center;
+
+      a {
+        text-decoration: none;
+        margin: 0 10px 0 10px;
+
+        i {
+          color: $main-color;
+          font-size: 30px;
+        }
+      }
+    }
+  }
+
+  aside {
+    width: 220px;
+    padding: 5px;
+    font-family: "Oswald", sans-serif;
+  }
+
+  #game-view {
+    margin: 0 10px;
+    background: black;
+    touch-action: none;
+    cursor: crosshair;
+
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  .game-instructions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: start;
+    font-size: 25px;
+
+    .instructions-container {
+      display: flex;
+      flex-wrap: wrap;
+      flex-basis: 100%;
+
+      .settings-container {
+        display: flex;
+        flex-basis: 100%;
+        flex-direction: column;
+
+        .keys-container{
+          .keys-icon {
+            flex-basis: 33%;
+            justify-content: end;
+            margin-right: 20px;
+          }
+        }
+
+        .keys-container:last-of-type {
+          margin: 10px 0;
+        }
+      }
+
+      .keys-container {
+        display: flex;
+        align-items: center;
+        flex-basis: 100%;
+        margin: 5px 0;
+
+        #sound-icons-container {
+          width: 40px;
+          margin-right: 10px;
+          
+          #sound-on {
+            display: none;
+          }
+          
+          .sound-icon {
+            font-size: 40px;
+    
+            &:hover {
+              cursor: pointer;
+            }
+          }
+        }
+
+        #touch-icons-container {
+          margin-right: 26px;
+          
+          #touch-on {
+            display: none;
+          }
+          
+          .touch-icon {
+            font-size: 25px;
+    
+            &:hover {
+              cursor: pointer;
+            }
+          }
+        }
+
+        #pause-icons-container {
+          margin-right: 26px;
+          
+          #pause-on {
+            display: none;
+          }
+          
+          .pause-icon {
+            font-size: 25px;
+    
+            &:hover {
+              cursor: pointer;
+            }
+          }
+        }
+
+        .keys-icon {
+          display: flex;
+          justify-content: start;
+          align-items: center;
+          flex-basis: 120%;
+          margin-left: 5px;
+          column-gap: 5px;
+
+          .arrow-icons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            width: 75px;
+            height: 48px;
+            font-size: 24px;
+          }
+  
+          .keyboard-key {
+            border: 2px solid $main-color;
+            border-radius: 3px;
+            background-color: $icon-background-color;
+            font-size: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 18px;
+            height: 18px;
+          }
+
+          .spacebar {
+            border: 2px solid $main-color;
+            border-radius: 3px;
+            padding: 0 4px 4px 4px;
+            width: 60px;
+            height: 20px;
+            text-align: center;
+            font-size: 16px;
+            background-color: $icon-background-color;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 1px;
+            margin-right: 25px;
+          }
+
+          .mouse-click {
+            width: 30px;
+            background-color: $icon-background-color;
+          }
+        }
+
+        .keys-text {
+          flex-basis: 35%;
+          font-size: 22px;
+        }
+
+        .keys-text-container {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          flex-basis: 55%;
+
+          .keys-text:first-of-type {
+            flex-basis: 100%;
+          }
+
+          .keys-text:last-of-type {
+            flex-basis: 50%;
+          }
+        }
+      }
+    }
+
+    ul {
+      margin-left: 5px;
+
+      li {
+        margin-top: 10px;
+        font-size: 20px;
+      }
+    }
+  }
+
+  .game-information {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 30px;
+    font-family: "Oswald", sans-serif;
+    font-size: 30px;
+
+    .score-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+
+      #score {
+        display: inline-block;
+        min-height: 30px;
+      }
+    }
+
+    .player-health {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+
+      #player-health-bar {
+        display: flex;
+        justify-content: start;
+        align-content: flex-start;
+        min-height: 26px;
+        width: 150px;
+
+        .player-health-point {
+          width: 10px;
+          height: 20px;
+          background: $main-color;
+          border: 3px ridge $secondary-color;
+          animation: fadeIn 1s linear;
+        }
+      }
+    }
+
+    #boss-info {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      
+      #boss-health-bar {
+        display: flex;
+        justify-content: start;
+        align-content: flex-start;
+        min-height: 36px;
+        width: 200px;
+
+        .boss-health-point {
+          width: 15px;
+          height: 30px;
+          background: $secondary-color;
+          border: 3px ridge $main-color;
+          animation: fadeIn 1s linear;
+        }
+      }
+    }
+
+    #wave-info {
+      display: flex;
+      align-items: center;
+      column-gap: 10px;
+
+      .wave-text {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .wave-numbers {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        gap: 10px;
+        min-width: 25px;
+      }
+    }
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity:0
+    }
+
+    100% {
+      opacity:1;
+    }
+  }
+}

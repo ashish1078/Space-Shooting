@@ -1,0 +1,181 @@
+@media screen and (max-width: 1250px) {
+  .main-container {
+    .header {
+      order: 1;
+      padding: 10px;
+      width: 680px;
+
+      .project-title {
+        font-size: 45px;
+      }
+
+      .dev-name {
+        font-size: 25px;
+      }
+
+      .nav-links {
+        a {
+          margin: 0 10px;
+
+          i {
+            font-size: 25px;
+          }
+        }
+      }
+    }
+
+    aside {
+      padding: 10px;
+      flex-basis: 680px;
+      height: auto;
+    }
+
+    .game-instructions {
+      order: 2;
+      margin-bottom: 10px;
+      height: auto;
+      justify-content: center;
+      align-items: center;
+      row-gap: 10px;
+
+      .instructions-container {
+        order: 2;
+        flex-basis: 100%;
+        justify-content: center;
+        row-gap: 10px;
+        column-gap: 20px;
+        flex-wrap: wrap-reverse;
+
+        .settings-container {
+          flex-direction: row;
+          justify-content: space-evenly;
+          flex-wrap: wrap;
+          column-gap: 15px;
+  
+          .keys-container > .keys-icon {
+            margin-right: 10px;
+          }
+
+          .keys-container:last-of-type {
+            margin: 0;
+          }
+        }
+
+        .keys-container {
+          flex-basis: auto;
+          justify-content: center;
+          column-gap: 5px;
+          margin: 0;
+
+          #sound-icons-container, 
+          #touch-icons-container, 
+          #pause-icons-container {
+            margin-right: 0;
+          }
+
+          .keys-icon {
+            flex-basis: auto;
+            margin: 0;
+
+            .spacebar {
+              margin: 0;
+            }
+          }
+
+          .keys-text {
+            font-size: 20px;
+          }
+
+          .keys-text, .keys-text-container {
+            flex-basis: unset;
+            margin-bottom: 2px;
+          }
+
+          .keys-text-container {
+            #sound-text {
+              width: 70px;
+            }
+
+            #pause-text {
+              width: 50px;
+            }
+
+            #touch-text {
+              width: 55px;
+            }
+
+            .keys-text:last-of-type {
+              flex-basis: unset;
+            }
+          }
+        }
+      }
+
+      ul {
+        order: 1;
+        margin: 0;
+
+        li {
+          margin: 0 0 10px 0;
+        }
+      }
+    }
+
+    #game-view {
+      order: 4;
+      margin: 10px 0 0 0;
+    }
+
+    .game-information {
+      order: 3;
+      flex-direction: row;
+      justify-content: center;
+      align-items: start;
+      column-gap: 30px;
+      row-gap: 10px;
+      font-size: 20px;
+
+      .score-container {
+        align-items: start;
+        gap: 8px;
+
+        #score {
+          min-height: 20px;
+          min-width: 75px;
+        }
+      }
+  
+      .player-health {
+        align-items: start;
+        
+        #player-health-bar {
+          min-height: 20px;
+
+          .player-health-point {
+            height: 15px;
+          }
+        }
+      }
+
+      #boss-info {
+        align-items: start;
+        
+        #boss-health-bar{
+          width: 200px;
+          min-height: 20px;
+
+          .boss-health-point {
+            height: 15px;
+            width: 20px;
+          }
+        }
+      }
+  
+      #wave-info {
+        .wave-text, .wave-numbers {
+          gap: 8px;
+        }
+      }
+    }
+  }
+}

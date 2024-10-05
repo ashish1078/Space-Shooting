@@ -1,0 +1,641 @@
+/*!*************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/index.scss ***!
+  \*************************************************************************************************************************************/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  -webkit-user-select: inherit;
+  -ms-user-select: inherit;
+  user-select: inherit;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  background-color: black;
+  color: rgb(39, 51, 121);
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+.main-container i, .main-container p, .main-container span, .main-container li, .main-container h1, .main-container h2 {
+  background-color: black;
+}
+.main-container .header, .main-container aside, .main-container #game-view {
+  border: 5px ridge white;
+}
+.main-container .header {
+  width: 660px;
+  text-align: center;
+  margin-bottom: 10px;
+  padding: 20px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-container .header .project-title {
+  font-size: 80px;
+  font-family: 'Space Games', sans-serif;
+                                                
+}
+.main-container .header .dev-name {
+  font-family: "Oswald", sans-serif;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.main-container .header .nav-links {
+  display: flex;
+  justify-content: center;
+}
+.main-container .header .nav-links a {
+  text-decoration: none;
+  margin: 0 10px 0 10px;
+}
+.main-container .header .nav-links a i {
+  color: white;
+  font-size: 30px;
+}
+.main-container aside {
+  width: 220px;
+  padding: 5px;
+  font-family: "Fantacy", sans-serif;
+}
+.main-container #game-view {
+  margin: 0 10px;
+  background: black;
+  touch-action: none;
+  cursor: crosshair;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.main-container .game-instructions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: start;
+  font-size: 25px;
+}
+.main-container .game-instructions .instructions-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+}
+.main-container .game-instructions .instructions-container .settings-container {
+  display: flex;
+  flex-basis: 100%;
+  flex-direction: column;
+}
+.main-container .game-instructions .instructions-container .settings-container .keys-container .keys-icon {
+  flex-basis: 33%;
+  justify-content: end;
+  margin-right: 20px;
+}
+.main-container .game-instructions .instructions-container .settings-container .keys-container:last-of-type {
+  margin: 10px 0;
+}
+.main-container .game-instructions .instructions-container .keys-container {
+  display: flex;
+  align-items: center;
+  flex-basis: 100%;
+  margin: 5px 0;
+}
+.main-container .game-instructions .instructions-container .keys-container #sound-icons-container {
+  width: 40px;
+  margin-right: 10px;
+}
+.main-container .game-instructions .instructions-container .keys-container #sound-icons-container #sound-on {
+  display: none;
+}
+.main-container .game-instructions .instructions-container .keys-container #sound-icons-container .sound-icon {
+  font-size: 40px;
+}
+.main-container .game-instructions .instructions-container .keys-container #sound-icons-container .sound-icon:hover {
+  cursor: pointer;
+}
+.main-container .game-instructions .instructions-container .keys-container #touch-icons-container {
+  margin-right: 26px;
+}
+.main-container .game-instructions .instructions-container .keys-container #touch-icons-container #touch-on {
+  display: none;
+}
+.main-container .game-instructions .instructions-container .keys-container #touch-icons-container .touch-icon {
+  font-size: 25px;
+}
+.main-container .game-instructions .instructions-container .keys-container #touch-icons-container .touch-icon:hover {
+  cursor: pointer;
+}
+.main-container .game-instructions .instructions-container .keys-container #pause-icons-container {
+  margin-right: 26px;
+}
+.main-container .game-instructions .instructions-container .keys-container #pause-icons-container #pause-on {
+  display: none;
+}
+.main-container .game-instructions .instructions-container .keys-container #pause-icons-container .pause-icon {
+  font-size: 25px;
+}
+.main-container .game-instructions .instructions-container .keys-container #pause-icons-container .pause-icon:hover {
+  cursor: pointer;
+}
+.main-container .game-instructions .instructions-container .keys-container .keys-icon {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-basis: 120%;
+  margin-left: 5px;
+  column-gap: 5px;
+}
+.main-container .game-instructions .instructions-container .keys-container .keys-icon .arrow-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 75px;
+  height: 48px;
+  font-size: 24px;
+}
+.main-container .game-instructions .instructions-container .keys-container .keys-icon .keyboard-key {
+  border: 2px solid white;
+  border-radius: 3px;
+  background-color: black;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 18px;
+  height: 18px;
+}
+.main-container .game-instructions .instructions-container .keys-container .keys-icon .spacebar {
+  border: 2px solid white;
+  border-radius: 3px;
+  padding: 0 4px 4px 4px;
+  width: 60px;
+  height: 20px;
+  text-align: center;
+  font-size: 16px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1px;
+  margin-right: 25px;
+}
+.main-container .game-instructions .instructions-container .keys-container .keys-icon .mouse-click {
+  width: 30px;
+  background-color: black;
+}
+.main-container .game-instructions .instructions-container .keys-container .keys-text {
+  flex-basis: 35%;
+  font-size: 22px;
+}
+.main-container .game-instructions .instructions-container .keys-container .keys-text-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-basis: 55%;
+}
+.main-container .game-instructions .instructions-container .keys-container .keys-text-container .keys-text:first-of-type {
+  flex-basis: 100%;
+}
+.main-container .game-instructions .instructions-container .keys-container .keys-text-container .keys-text:last-of-type {
+  flex-basis: 50%;
+}
+.main-container .game-instructions ul {
+  margin-left: 5px;
+}
+.main-container .game-instructions ul li {
+  margin-top: 10px;
+  font-size: 20px;
+}
+.main-container .game-information {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 30px;
+  font-family: "Oswald", sans-serif;
+  font-size: 30px;
+}
+.main-container .game-information .score-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.main-container .game-information .score-container #score {
+  display: inline-block;
+  min-height: 30px;
+}
+.main-container .game-information .player-health {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.main-container .game-information .player-health #player-health-bar {
+  display: flex;
+  justify-content: start;
+  align-content: flex-start;
+  min-height: 26px;
+  width: 150px;
+}
+.main-container .game-information .player-health #player-health-bar .player-health-point {
+  width: 10px;
+  height: 20px;
+  background: white;
+  border: 3px ridge gray;
+  animation: fadeIn 1s linear;
+}
+.main-container .game-information #boss-info {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.main-container .game-information #boss-info #boss-health-bar {
+  display: flex;
+  justify-content: start;
+  align-content: flex-start;
+  min-height: 36px;
+  width: 200px;
+}
+.main-container .game-information #boss-info #boss-health-bar .boss-health-point {
+  width: 15px;
+  height: 30px;
+  background: gray;
+  border: 3px ridge white;
+  animation: fadeIn 1s linear;
+}
+.main-container .game-information #wave-info {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+.main-container .game-information #wave-info .wave-text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.main-container .game-information #wave-info .wave-numbers {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 10px;
+  min-width: 25px;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .main-container .header {
+    order: 1;
+    padding: 10px;
+    width: 680px;
+  }
+  .main-container .header .project-title {
+    font-size: 45px;
+  }
+  .main-container .header .dev-name {
+    font-size: 25px;
+  }
+  .main-container .header .nav-links a {
+    margin: 0 10px;
+  }
+  .main-container .header .nav-links a i {
+    font-size: 25px;
+  }
+  .main-container aside {
+    padding: 10px;
+    flex-basis: 680px;
+    height: auto;
+  }
+  .main-container .game-instructions {
+    order: 2;
+    margin-bottom: 10px;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+  }
+  .main-container .game-instructions .instructions-container {
+    order: 2;
+    flex-basis: 100%;
+    justify-content: center;
+    row-gap: 10px;
+    column-gap: 20px;
+    flex-wrap: wrap-reverse;
+  }
+  .main-container .game-instructions .instructions-container .settings-container {
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    column-gap: 15px;
+  }
+  .main-container .game-instructions .instructions-container .settings-container .keys-container > .keys-icon {
+    margin-right: 10px;
+  }
+  .main-container .game-instructions .instructions-container .settings-container .keys-container:last-of-type {
+    margin: 0;
+  }
+  .main-container .game-instructions .instructions-container .keys-container {
+    flex-basis: auto;
+    justify-content: center;
+    column-gap: 5px;
+    margin: 0;
+  }
+  .main-container .game-instructions .instructions-container .keys-container #sound-icons-container,
+  .main-container .game-instructions .instructions-container .keys-container #touch-icons-container,
+  .main-container .game-instructions .instructions-container .keys-container #pause-icons-container {
+    margin-right: 0;
+  }
+  .main-container .game-instructions .instructions-container .keys-container .keys-icon {
+    flex-basis: auto;
+    margin: 0;
+  }
+  .main-container .game-instructions .instructions-container .keys-container .keys-icon .spacebar {
+    margin: 0;
+  }
+  .main-container .game-instructions .instructions-container .keys-container .keys-text {
+    font-size: 20px;
+  }
+  .main-container .game-instructions .instructions-container .keys-container .keys-text, .main-container .game-instructions .instructions-container .keys-container .keys-text-container {
+    flex-basis: unset;
+    margin-bottom: 2px;
+  }
+  .main-container .game-instructions .instructions-container .keys-container .keys-text-container #sound-text {
+    width: 70px;
+  }
+  .main-container .game-instructions .instructions-container .keys-container .keys-text-container #pause-text {
+    width: 50px;
+  }
+  .main-container .game-instructions .instructions-container .keys-container .keys-text-container #touch-text {
+    width: 55px;
+  }
+  .main-container .game-instructions .instructions-container .keys-container .keys-text-container .keys-text:last-of-type {
+    flex-basis: unset;
+  }
+  .main-container .game-instructions ul {
+    order: 1;
+    margin: 0;
+  }
+  .main-container .game-instructions ul li {
+    margin: 0 0 10px 0;
+  }
+  .main-container #game-view {
+    order: 4;
+    margin: 10px 0 0 0;
+  }
+  .main-container .game-information {
+    order: 3;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    column-gap: 30px;
+    row-gap: 10px;
+    font-size: 20px;
+  }
+  .main-container .game-information .score-container {
+    align-items: start;
+    gap: 8px;
+  }
+  .main-container .game-information .score-container #score {
+    min-height: 20px;
+    min-width: 75px;
+  }
+  .main-container .game-information .player-health {
+    align-items: start;
+  }
+  .main-container .game-information .player-health #player-health-bar {
+    min-height: 20px;
+  }
+  .main-container .game-information .player-health #player-health-bar .player-health-point {
+    height: 15px;
+  }
+  .main-container .game-information #boss-info {
+    align-items: start;
+  }
+  .main-container .game-information #boss-info #boss-health-bar {
+    width: 200px;
+    min-height: 20px;
+  }
+  .main-container .game-information #boss-info #boss-health-bar .boss-health-point {
+    height: 15px;
+    width: 20px;
+  }
+  .main-container .game-information #wave-info .wave-text, .main-container .game-information #wave-info .wave-numbers {
+    gap: 8px;
+  }
+}
+@media screen and (max-width: 736px) {
+  .main-container .game-instructions > ul > li {
+    font-size: 18px;
+  }
+  .main-container #game-view {
+    width: calc(100% - 10px);
+    height: auto;
+  }
+  .main-container .game-information {
+    flex-wrap: wrap;
+    font-size: 20px;
+    column-gap: 20px;
+  }
+  .main-container .game-information .player-health > #player-health-bar {
+    width: 130px;
+  }
+  .main-container .game-information .player-health > #player-health-bar .player-health-point {
+    width: 8px;
+  }
+  .main-container .game-information #boss-info > #boss-health-bar {
+    width: 200px;
+  }
+  .main-container .game-information #boss-info > #boss-health-bar .boss-health-point {
+    width: 15px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .main-container .header .project-title {
+    font-size: 30px;
+  }
+  .main-container .header .dev-name {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .main-container .header .nav-links a {
+    margin: 0 5px;
+  }
+  .main-container .header .nav-links a i {
+    font-size: 16px;
+  }
+  .main-container .game-instructions .instructions-container {
+    column-gap: 10px;
+  }
+  .main-container .game-instructions .instructions-container .settings-container {
+    column-gap: 10px;
+  }
+  .main-container .game-instructions .instructions-container .settings-container .keys-container > .keys-icon {
+    margin-right: 0;
+  }
+  .main-container .game-instructions .instructions-container .settings-container .keys-container:nth-of-type(2) > .keys-icon {
+    margin-right: 0;
+  }
+  .main-container .game-instructions .instructions-container .keys-container .keys-icon .arrow-icons {
+    justify-content: center;
+    align-items: center;
+    width: 58px;
+    height: 38px;
+    font-size: 20px;
+  }
+  .main-container .game-instructions .instructions-container .keys-container .keys-icon .arrow-icons i:nth-of-type(3) {
+    margin: 0 2px;
+  }
+  .main-container .game-instructions .instructions-container .keys-container .keys-icon .keyboard-key {
+    font-size: 9px;
+    width: 14px;
+    height: 14px;
+  }
+  .main-container .game-instructions .instructions-container .keys-container .keys-icon .keyboard-key:nth-of-type(4) {
+    margin: 0 2px;
+  }
+  .main-container .game-instructions .instructions-container .keys-container .keys-icon .spacebar {
+    width: 40px;
+    height: 15px;
+    font-size: 10px;
+    padding-bottom: 1px;
+  }
+  .main-container .game-instructions .instructions-container .keys-container .keys-icon .mouse-click {
+    width: 20px;
+  }
+  .main-container .game-instructions .instructions-container .keys-container .keys-text {
+    font-size: 14px;
+  }
+  .main-container .game-instructions .instructions-container .keys-container .keys-text-container #sound-text {
+    width: 50px;
+  }
+  .main-container .game-instructions .instructions-container .keys-container .keys-text-container #touch-text {
+    width: 38px;
+  }
+  .main-container .game-instructions .instructions-container .keys-container .keys-text-container #pause-text {
+    width: 34px;
+  }
+  .main-container .game-instructions .instructions-container .keys-container #sound-icons-container {
+    width: 26px;
+  }
+  .main-container .game-instructions .instructions-container .keys-container #sound-icons-container .sound-icon {
+    font-size: 22px;
+  }
+  .main-container .game-instructions .instructions-container .keys-container #touch-icons-container .touch-icon,
+  .main-container .game-instructions .instructions-container .keys-container #pause-icons-container .pause-icon {
+    font-size: 16px;
+  }
+  .main-container .game-instructions .instructions-container .keys-container #touch-icons-container,
+  .main-container .game-instructions .instructions-container .keys-container #pause-icons-container {
+    width: 15px;
+  }
+  .main-container .game-instructions ul > li {
+    font-size: 14px;
+  }
+  .main-container .game-information {
+    font-size: 14px;
+    column-gap: 10px;
+  }
+  .main-container .game-information .score-container {
+    gap: 5px;
+  }
+  .main-container .game-information .score-container #score {
+    min-height: 16px;
+    min-width: 60px;
+  }
+  .main-container .game-information .player-health {
+    gap: 5px;
+  }
+  .main-container .game-information .player-health #player-health-bar {
+    width: 100px;
+    min-height: 16px;
+  }
+  .main-container .game-information .player-health #player-health-bar .player-health-point {
+    height: 10px;
+    width: 5px;
+  }
+  .main-container .game-information #boss-info {
+    gap: 5px;
+  }
+  .main-container .game-information #boss-info #boss-health-bar {
+    width: 150px;
+    min-height: 16px;
+  }
+  .main-container .game-information #boss-info #boss-health-bar .boss-health-point {
+    height: 10px;
+    width: 10px;
+  }
+  .main-container .game-information #wave-info .wave-text, .main-container .game-information #wave-info .wave-numbers {
+    gap: 5px;
+  }
+}
+.break {
+  flex-basis: 100%;
+}
+
+body {
+  background-image: url(../src/assets/images/body_background.png);
+  background-repeat: repeat;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}

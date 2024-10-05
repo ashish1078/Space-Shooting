@@ -1,0 +1,34 @@
+@media screen and (max-width: 736px) {
+  .main-container {
+    .game-instructions > ul > li {
+      font-size: 18px;
+    }
+
+    #game-view {
+      width: calc(100% - 10px);
+      height: auto;
+    }
+
+    .game-information {
+      flex-wrap: wrap;
+      font-size: 20px;
+      column-gap: 20px;
+
+      .player-health > #player-health-bar {
+        width: 130px;
+
+        .player-health-point {
+          width: 8px;
+        }
+      }
+
+      #boss-info > #boss-health-bar{
+        width: 200px;
+
+        .boss-health-point {
+          width: 15px;
+        }
+      }
+    }
+  }
+}

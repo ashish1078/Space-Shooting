@@ -1,0 +1,23 @@
+@import "./styles/css-reset.scss";
+@import "./styles/main-container.scss";
+@import "./styles/media-1250px.scss";
+@import "./styles/media-736px.scss";
+@import "./styles/media-480px.scss";
+
+.break {
+  flex-basis: 100%;
+}
+
+body {
+  background-image: url(../src/assets/images/body_background.png);
+  background-repeat: repeat;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}

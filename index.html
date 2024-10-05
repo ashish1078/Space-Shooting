@@ -1,0 +1,166 @@
+<html lang="en">
+
+  <head>
+    <title>Galactic Defender</title>
+    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="author" content="Fahim Khan">
+    <meta name="description" content="A galaxy shooter game, based off the classic Space Invaders and Galaga games. Made with only JavaScript." />
+    <meta property="og:title" content="Galactic Defender" />
+    <meta property="og:image" content="src/assets/screenshots/og_image.png" />
+    <meta property="og:description" content="A galaxy shooter game, based off the classic Space Invaders and Galaga games. Made with only JavaScript." />
+    <meta property="og:url" content="https://fk652.github.io/Galactic-Defender/" />
+
+    <script src="./dist/main.js" defer></script>
+    
+    <link href="https://fonts.cdnfonts.com/css/space-games" rel="stylesheet">
+                
+    <link rel="stylesheet" href="./dist/main.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="icon" type="image/png" href="shuttle.png">
+ 
+  </head>
+
+  <body>
+    <div class="main-container">
+      <div class="header">
+        <h1 class="project-title">SPACE SHOOTER</h1>
+        <style>
+          @import url('https://fonts.cdnfonts.com/css/space-games');
+</style>
+
+        <div class="nav-links">
+
+        </div>
+      </div>
+
+      <div class="break"></div>
+
+      <aside class="game-information">
+        <div class="score-container">
+          <p>Score</p>
+          <span id="score"></span>
+        </div>
+
+        <div class="player-health">
+          <p>Player Health</p>
+          <ul id="player-health-bar"></ul>
+        </div>
+
+        <div id="wave-info">
+          <div class="wave-text">
+            <p>Wave:</p>
+            <p>Remaining:</p>
+          </div>
+
+          <div class="wave-numbers">
+            <p id="wave-number"></p>
+            <p id="enemies-remaining"></p>
+          </div>
+        </div>
+
+        <div id="boss-info">
+          <p>Boss Health</p>
+          <ul id="boss-health-bar"></ul>
+        </div>
+      </aside>
+
+      <canvas id="game-view" width="700" height="550"></canvas>
+
+      <aside class="game-instructions">
+        <div class="instructions-container">
+          <div class="settings-container">
+            <div id="touch" class="keys-container">
+              <div class="keys-icon">
+                <div id="touch-icons-container">
+                  <div id="touch-on" class="touch-icon">
+                    <i class="fa fa-check-square"></i>
+                  </div>
+                  <div id="touch-off" class="touch-icon">
+                    <i class="fa fa-square"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="keys-text-container">
+                <p id="touch-text" class="keys-text">mouse follow</p>
+                <p class="keys-text">(M)</p>
+              </div>
+            </div>
+
+            <div id="sound" class="keys-container">
+              <div class="keys-icon">
+                <div id="sound-icons-container">
+                  <div id="sound-on" class="sound-icon">
+                    <i class="fa fa-volume-up"></i>
+                  </div>
+                  <div id="sound-off" class="sound-icon">
+                    <i class="fa fa-volume-off"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="keys-text-container">
+                <p id="sound-text" class="keys-text">muted</p>
+                <p class="keys-text">(K)</p>
+              </div>
+            </div>
+
+            <div id="pause" class="keys-container">
+              <div class="keys-icon">
+                <div id="pause-icons-container">
+                  <div id="pause-on" class="pause-icon">
+                    <i class="fa fa-play"></i>
+                  </div>
+                  <div id="pause-off" class="pause-icon">
+                    <i class="fa fa-pause"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="keys-text-container">
+                <p id="pause-text" class="keys-text">pause</p>
+                <p class="keys-text">(P)</p>
+              </div>
+            </div>
+          </div>
+
+          <div id="move" class="keys-container">
+            <div class="keys-icon">
+                <div class="arrow-icons">
+                  <i class="far fa-caret-square-up"></i>
+                  <div class="break"></div>
+                  <i class="far fa-caret-square-left"></i>
+                  <i class="far fa-caret-square-down"></i>
+                  <i class="far fa-caret-square-right"></i>
+                </div>
+                <div class="arrow-icons">
+                  <div class="keyboard-key">W</div>
+                  <div class="break"></div>
+                  <div class="keyboard-key">A</div>
+                  <div class="keyboard-key">S</div>
+                  <div class="keyboard-key">D</div>
+                </div>
+            </div>
+            <p class="keys-text">move</p>
+          </div>
+
+          <div id="shoot" class="keys-container">
+            <div class="keys-icon">
+              <p class="spacebar">spacebar</p>
+              <svg class="mouse-click" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M20 10V14C20 18.4183 16.4183 22 12 22C7.58172 22 4 18.4183 4 14V9C4 5.13401 7.13401 2 11 2H12C16.4183 2 20 5.58172 20 10Z" stroke="currentColor" stroke-linecap="round"/> <path d="M12 2V8.4C12 8.73137 11.7314 9 11.4 9H4" stroke="currentColor" stroke-linecap="round"/> </svg>
+            </div>
+            <p class="keys-text">shoot</p>
+          </div>
+        </div>
+
+        <ul id="rules">
+          <li>Survive against 5 waves of enemies and defeat the boss to win.</li>
+          <li>Avoid enemy projectiles and colliding with enemies.</li>
+          <li>Game over if player health reaches 0.</li>
+          <li>Score bonus points per remaining hp between waves.</li>
+          <li>Damage the boss by hitting the weakspot in the center.</li>
+        </ul>
+      </aside>
+    </div>
+  </body>
+</html>
