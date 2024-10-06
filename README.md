@@ -1,4 +1,4 @@
-# Galactic Defender
+# Space-Shooter
 
 
 ## Background
